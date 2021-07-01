@@ -1,8 +1,12 @@
+import './components/navbar'
+import './components/swiper'
+
 require('./bootstrap');
 require('intersection-observer');
 var LazyLoad = require('vanilla-lazyload');
 require('slick-carousel');
 require('magnific-popup');
+
 
 $(document).ready(function () {
 

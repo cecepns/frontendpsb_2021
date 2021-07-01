@@ -4,6 +4,13 @@
 // Bootstrap
 @import "bootstrap";
 
+// Base
+@import "base/base.scss";
+@import "base/typhography.scss";
+
+//outsource
+@import "outsource/swiper";
+
 // Plugins
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";

@@ -1,0 +1,33 @@
+// /*------------------*
+// # Base
+// *------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  * {
+    &,
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  }
+
+  .heading {
+    color: #004df9;
+        font-weight: 800;
+        font-size: 18px;
+        justify-content: center;
+        margin-bottom: 10px;
+  }
+  

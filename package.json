@@ -24,6 +24,7 @@
     "intersection-observer": "^0.7.0",
     "natives": "^1.1.6",
     "slick-carousel": "^1.8.1",
+    "swiper": "^6.7.1",
     "vanilla-lazyload": "^12.0.0",
     "wowjs": "^1.1.3"
   }
