@@ -17336,6 +17336,12 @@ main {
   padding-top: 30px;
 }
 
+@media (min-width: 640px) {
+  .section__ourclient .wrapper__ourclient {
+    padding-left: 20px;
+  }
+}
+
 .section__ourclient .wrapper__ourclient .row {
   padding: 25px 0;
 }
@@ -17348,7 +17354,7 @@ main {
 
 @media (min-width: 640px) {
   .section__contact .container {
-    padding-left: 55px;
+    padding-left: 50px;
     padding-right: 50px;
   }
 }
