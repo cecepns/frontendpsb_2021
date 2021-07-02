@@ -99,20 +99,37 @@ main {
         font-size: 10px;
         position: relative;
         padding-left: 10px;
-        &::after {
-            content: '';
+        animation: blurFadeInDesc 4s ease-in 2s infinite;
+        span:first-child {
             position: absolute;
             left: -10px;
             bottom: 1px;
             width: 15px;
             height: 15px;
             border-radius: 100%;
+            animation: blurFadeInDesc 4s ease-in 2s infinite;
             background-color: #caff01;
         }
         // border-bottom: 1px solid #fff;
         span {
             font-weight: normal;
         }
+
+        @keyframes blurFadeInDesc {
+            0% {
+            opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+          75%{
+            opacity: 0;
+          }
+            100% {
+                opacity: 1;
+            }
+        }
+        
     }
 }
 

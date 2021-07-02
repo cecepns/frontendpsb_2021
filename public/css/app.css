@@ -17122,21 +17122,37 @@ main {
   font-size: 10px;
   position: relative;
   padding-left: 10px;
+  animation: blurFadeInDesc 4s ease-in 2s infinite;
 }
 
-.section__home--desc::after {
-  content: '';
+.section__home--desc span:first-child {
   position: absolute;
   left: -10px;
   bottom: 1px;
   width: 15px;
   height: 15px;
   border-radius: 100%;
+  animation: blurFadeInDesc 4s ease-in 2s infinite;
   background-color: #caff01;
 }
 
 .section__home--desc span {
   font-weight: normal;
+}
+
+@keyframes blurFadeInDesc {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section__projects {
