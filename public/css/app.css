@@ -9747,6 +9747,14 @@ p {
 
 @font-face {
   font-family: 'Yantramanap';
+  src: url("../../fonts/Yantramanav/Yantramanav-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yantramanap';
   src: url("../../fonts/Yantramanav/Yantramanav-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -16742,6 +16750,7 @@ readers do not read off random characters that represent icons */
 .navbar--custom .navbar-nav .nav-link {
   color: white;
   font-size: 13px;
+  transition: all .3s ease-in-out;
 }
 
 .navbar--custom .navbar-nav .nav-link:hover {
@@ -16761,6 +16770,19 @@ readers do not read off random characters that represent icons */
 
 .navbar--custom .navbar-brand img {
   max-width: 100px;
+}
+
+.footer {
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.footer .wrapper__footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
@@ -16975,6 +16997,34 @@ readers do not read off random characters that represent icons */
   max-width: 100%;
 }
 
+.btn--brand {
+  background-color: #caff01;
+  font-weight: bold;
+  width: 160px;
+  height: 40px;
+  border-radius: 7px;
+  letter-spacing: .3px;
+  transition: all .3s ease-in-out;
+}
+
+.btn--brand:hover {
+  background-color: #9cc700;
+}
+
+.btn--form {
+  background-color: #caff01;
+  font-weight: bold;
+  width: 150px;
+  height: 42px;
+  border-radius: 7px;
+  letter-spacing: .3px;
+  transition: all .3s ease-in-out;
+}
+
+.btn--form:hover {
+  background-color: #9cc700;
+}
+
 body {
   background-color: #000000;
   font-family: 'Yantrapamap', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16997,14 +17047,73 @@ main {
 }
 
 .section__home--title {
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-size: 70px;
   -webkit-text-stroke: 2px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-.section__home--title span {
-  color: #004df9;
+.section__home--title span:first-child {
+  animation: blurFadeIn 6s ease-in 2s infinite;
+}
+
+.section__home--title span:nth-child(2) {
+  animation: blurFadeInBlue 6s ease-in 3s infinite;
+}
+
+.section__home--title span:nth-child(3) {
+  animation: blurFadeIn 6s ease-in 3.5s infinite;
+}
+
+.section__home--title span:nth-child(5) {
+  animation: blurFadeIn 6s ease-in 4s infinite;
+}
+
+.section__home--title span:nth-child(6) {
+  animation: blurFadeIn 6s ease-in 4.5s infinite;
+}
+
+.section__home--title span:nth-child(7) {
+  animation: blurFadeIn 6s ease-in 5s infinite;
+}
+
+.section__home--title span:nth-child(8) {
+  animation: blurFadeIn 6s ease-in 5.5s infinite;
+}
+
+@keyframes blurFadeIn {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes blurFadeInBlue {
+  0% {
+    color: #034bf6;
+    text-shadow: -1px -1px 0 #034bf6, 1px -1px 0 #034bf6, -1px 1px 0 #034bf6, 1px 1px 0 #034bf6;
+  }
+  50% {
+    color: #034bf6;
+    text-shadow: -1px -1px 0 #034bf6, 1px -1px 0 #034bf6, -1px 1px 0 #034bf6, 1px 1px 0 #034bf6;
+  }
+  75% {
+    color: #000;
+  }
+  100% {
+    color: #034bf6;
+    text-shadow: -1px -1px 0 #034bf6, 1px -1px 0 #034bf6, -1px 1px 0 #034bf6, 1px 1px 0 #034bf6;
+  }
 }
 
 .section__home--desc {
@@ -17071,8 +17180,8 @@ main {
 }
 
 .section__aboutus {
-  padding-top: 6rem;
-  min-height: 70vh;
+  padding-top: 90px;
+  padding-bottom: 140px;
 }
 
 @media (min-width: 640px) {
@@ -17098,20 +17207,20 @@ main {
   max-width: 120px;
 }
 
-.section__achievement {
-  min-height: 80vh;
-}
-
 .section__achievement .swiper-container .swiper-button-prev {
   position: absolute;
   top: 120px;
-  right: 0px;
+  left: 0;
   z-index: 99;
+  color: #fff;
 }
 
 .section__achievement .swiper-container .swiper-button-next {
   position: absolute;
-  bottom: 90px;
+  z-index: 99;
+  color: #fff;
+  top: 120px;
+  right: 0;
 }
 
 @media (min-width: 992px) {
@@ -17143,6 +17252,139 @@ main {
 
 .section__achievement .wrapper__cta img {
   max-width: 155px;
+}
+
+.section__ourservice {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section__ourservice--title {
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+}
+
+.section__ourservice .wrapper__service {
+  padding: 50px 0;
+}
+
+.section__ourservice .wrapper__service .desc {
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.section__brainchild {
+  background-color: #004df9;
+  padding: 10vh 0;
+}
+
+.section__brainchild--title {
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section__brainchild .brand--desc {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+@media (min-width: 640px) {
+  .section__brainchild .col-md-6:nth-child(1) {
+    padding-left: 85px;
+  }
+}
+
+.section__ourclient {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section__ourclient--title {
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+}
+
+.section__ourclient .wrapper__ourclient {
+  padding-top: 30px;
+}
+
+.section__ourclient .wrapper__ourclient .row {
+  padding: 25px 0;
+}
+
+.section__contact {
+  padding-top: 20px;
+  padding-bottom: 210px;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .section__contact .container {
+    padding-left: 55px;
+    padding-right: 50px;
+  }
+}
+
+.section__contact .item--contact {
+  padding-bottom: 40px;
+}
+
+.section__contact .title {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.section__contact .contact {
+  font-size: 15px;
+}
+
+.section__contact .address {
+  font-size: 15px;
+}
+
+.section__contact .address span {
+  font-weight: 800;
+}
+
+.section__contact .title--form {
+  font-weight: 800;
+  -webkit-text-stroke: 2px;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.section__contact .title--form span {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.section__contact .box__form {
+  padding-top: 30px;
+}
+
+.section__contact .box__form .custom--form {
+  background-color: transparent;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+.section__contact .box__form .col-12 input {
+  height: 130px;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -24,6 +24,19 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Yantramanap';
+    src: 
+    url('../../fonts/Yantramanav/Yantramanav-Bold.ttf') format('truetype'),
+    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
+        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
+        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
+        ;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
 @font-face {
     font-family: 'Yantramanap';
     src: 
