@@ -1,0 +1,144 @@
+.pages-aboutus {
+    .section__aboutus {
+        min-height: 100vh;
+        padding-top: 100px;
+
+        &--title {
+            font-size: 55px;
+            font-weight: 700;
+            @media(min-width:640px){
+                width: 87%;
+                margin-left: auto;
+            }
+            span:nth-child(1) {
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+
+            }
+            span:nth-child(2) {
+                color: #0F54F6;
+            }
+        }
+
+        &--desc {
+            color: #fff;
+            font-size: 13px;
+            margin-bottom: 0;
+            @media(min-width:640px) {
+                width: 57%;
+                margin-left: auto;
+                margin-right: 60px;
+                padding-top: 80px;
+                padding-bottom: 100px;
+            }
+        }
+
+        .wrapper__image {
+            // display: grid;
+            // grid-template-columns: auto auto;
+            // grid-column-gap: 0px ;
+            // img:nth-child(1) {
+            //     max-width: 80%;
+            // }
+            .col-12 {
+                img:nth-child(1) {
+                }
+               img:nth-child(2) {
+                   height: 467px;
+                   padding-left: 10px;
+               }
+            }
+        }
+    }
+}
+
+.section__ourwork {
+    &--title {
+        font-size: 34px;
+        line-height: 50px;
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .wrapper__detailwork {
+        color: #fff;
+        .title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .desc {
+            font-size: 13px;
+        }
+
+        .row:nth-child(2) {
+            @media(min-width:640px){
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.section__ourteam {
+    padding: 120px 0;
+    color: #fff;
+    .row {
+        .col-md-3 {
+            padding: 8px 0px;
+            // margin: ;
+        }
+    }
+
+    &--title {
+        font-size: 34px;
+        line-height: 50px;
+        font-weight: 800;
+        padding-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    &--desc {
+        font-size: 13px;
+    }
+
+    .wrapper__boxourteam {
+        max-height: 325px;
+        max-width: 270px;
+        overflow: hidden;
+        position: relative;
+        transition: all .3s ease-in-out;
+        filter: grayscale(1);
+        
+        &:hover {
+            filter: unset;
+        }
+
+        &:hover > .wrapper__boxcta {
+            transform: translateY(0);
+            filter: unset;
+        }
+
+        .wrapper__boxcta{
+            transition: all .3s ease-in-out;
+            transform: translateY(85px);
+            position: absolute;
+            width: 100%;
+            height: 85px;
+            background-color: #0F54F6;
+            color: #fff;
+            bottom: 0;
+            padding: 18px 10px;
+            .title {
+                font-size: 20px;
+                margin-bottom: 5px;
+
+            }
+            .position {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+
+
+}
