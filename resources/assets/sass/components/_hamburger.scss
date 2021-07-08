@@ -1,0 +1,47 @@
+.navbar--custom {
+    .hamburger-box {
+        position: relative;
+        z-index: 999;
+        display: block;
+        width: 32px;
+        height: 40px;
+        span {
+            display: block;
+            width: 90%;
+            height: 4px;
+            position: absolute;
+            opacity: 1;
+            right: 0;
+            background: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        span:nth-child(1) {
+            top: 6px;
+        }
+        span:nth-child(2) {
+            top: 18px;
+        }
+        span:nth-child(3) {
+            top: 30px;
+        }
+    }
+}
+
+.navbar-toggler {
+    padding: 0;
+    &[aria-expanded="true"] > .hamburger-box span:nth-child(1) {
+        top: 18px;
+        transform: rotate(
+    135deg
+    );
+    }
+    &[aria-expanded="true"] > .hamburger-box span:nth-child(2) {
+        top: 18px;
+        right: -100%;
+        opacity: 0;
+    }
+    &[aria-expanded="true"] > .hamburger-box span:nth-child(3) {
+        top: 18px;
+        transform: rotate( -135deg );
+    }
+}

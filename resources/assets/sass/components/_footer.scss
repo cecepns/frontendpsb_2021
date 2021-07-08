@@ -4,6 +4,11 @@
     display: flex;
     align-items: center;
     align-content: center;
+    @media(max-width:640px) {
+        p {
+            font-size: 11px;
+        }
+    }
     .wrapper__footer{
         display: flex;
         justify-content: space-between;

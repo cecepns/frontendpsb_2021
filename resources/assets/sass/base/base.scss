@@ -4,30 +4,33 @@
 
 html {
     box-sizing: border-box;
-  }
-  
-  html, body {
+}
+
+body,
+html {
     overflow-x: hidden;
     font-size: 16px;
-  }
-  
-  p {
-    font-size: 18px;
-  }
-  
-  * {
-    &,
-    &::before,
-    &::after {
-      box-sizing: border-box;
-    }
-  }
+}
 
-  .heading {
+p {
+    font-size: 18px;
+}
+
+* {
+    &,
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+.heading {
     color: #004df9;
-        font-weight: 800;
+    font-weight: 800;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 10px;
+    @media(min-width:640px) {
         font-size: 18px;
-        justify-content: center;
-        margin-bottom: 10px;
-  }
-  
+    }
+}
