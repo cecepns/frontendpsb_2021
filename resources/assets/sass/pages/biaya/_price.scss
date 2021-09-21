@@ -1,0 +1,179 @@
+.biaya__pendidikan {
+    min-height: 100vh;
+    padding: 25px 0;
+    overflow: hidden;
+    .wrapper__button {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i {
+            padding-right: 10px;
+        }
+    }
+    .title-content {
+        font-size: 27px;
+        color: #333d47;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 25px;
+        @media (min-width:640px) {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        span {
+            color: #c03f94;
+            @media (min-width:640px) {
+                // font-size: 30px;
+            }
+        }
+    }
+
+    .wrapper__table {
+        width: 100%;
+        @media(min-width:640px) {
+            grid-template-columns: auto auto auto;
+        }
+
+        .card__title-price {
+            min-height: 605px;
+            border-radius: 10px;
+            border: 1px solid #e8e8e8;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 26px 32px rgba(26, 36, 72, .05);
+
+            .title {
+                border-bottom: 1px solid #e8e8e8;
+                padding-bottom: 10px;
+            }
+
+            .wrapper__item {
+                .item {
+                    font-size: 16px;
+                    line-height: 35px;
+                    line-height: 45px;
+                    border-bottom: 1px solid #e8e8e8;
+                    @media(min-width: 640px) {
+                        font-size: 19px;
+                    }
+                }
+            }
+
+        }
+
+        .card__price {
+            min-height: 605px;
+            border-radius: 10px;
+            border: 1px solid #e8e8e8;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 26px 32px rgba(26, 36, 72, .05);
+
+            .title {
+                border-bottom: 1px solid #e8e8e8;
+                padding-bottom: 10px;
+
+            }
+
+            .wrapper__item {
+                .item {
+                    font-size: 19px;
+                    line-height: 45px;
+                    border-bottom: 1px solid #e8e8e8;
+                    text-align: right;
+                }
+
+                h3 {
+                    background-color: rgb(247, 153, 30);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 3px;
+                }
+            }
+
+        }
+
+        .wrapper__item {
+            display: flex;
+            flex-direction: column;
+            .price {
+                text-align: right;
+            }
+        }
+
+    }
+
+
+
+    .wrapper__pagination {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        @media(min-width:640px) {
+            justify-content: flex-start;
+            display: none;
+
+        }
+        // width: 0%;
+        align-items: center;
+    }
+
+    .swiper-container-price {
+        .swiper-pagination-price {
+            margin: 0px 20px;
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                margin-right: 5px;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: #c03f94;
+            }
+        }
+
+        .swiper-button-next-price,
+        .swiper-button-prev-price {
+            color: #c03f94;
+            box-shadow: 4px 7px 14px rgba(0, 0, 0, 0.06);
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after {
+                content: none;
+            }
+        }
+
+        .swiper-button-next-price {
+
+            &.swiper-button-disabled {
+                background-color: rgb(242, 242, 242);
+                box-shadow: none;
+                filter: grayscale(1);
+                opacity: 0.3;
+                cursor: not-allowed;
+                pointer-events: inherit;
+            }
+        }
+
+        .swiper-button-prev-price {
+            &.swiper-button-disabled {
+                background-color: rgb(242, 242, 242);
+                box-shadow: none;
+                filter: grayscale(1);
+                opacity: 0.3;
+                cursor: not-allowed;
+                pointer-events: inherit;
+
+            }
+
+        }
+    }
+
+}

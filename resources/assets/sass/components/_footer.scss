@@ -1,17 +1,65 @@
-.footer {
+.footer__frontend {
+    width: 100%;
+    background-color: #4f3f96;
     color: #fff;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    @media(max-width:640px) {
-        p {
-            font-size: 11px;
+    .wrapper__footer {
+        .wrapper__detailfooter {
+            padding: 20px 0;
+            display: grid;
+            grid-template-columns: 100%;
+            @media(min-width: 640px) {
+                grid-template-columns: 33.333% 33.333% 33.333%;
+            }
+            grid-gap: 20px;
+            justify-content: center;
+            .wrapper__item {
+                padding: 0 15px;
+                font-size: 19px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                .title {
+                    font-size: 27px;
+                    font-weight: 700;
+                    // color: #c03f94;
+                }
+                .site-link {
+                    display: flex;
+                    ul {
+                        li {
+                            padding-bottom: 15px;
+                            padding-right: 10px;
+                            transition-property: all;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 0.15s;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            a {
+                                display: flex;
+                                align-items: center;
+                                svg {
+                                    padding-right: 8px;
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-    }
-    .wrapper__footer{
-        display: flex;
-        justify-content: space-between;
-        
+        .wrapper__copyright {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            h3 {
+                margin: 0;
+                padding: 0;
+                font-weight: 800;
+                @media(max-width: 640px) {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }

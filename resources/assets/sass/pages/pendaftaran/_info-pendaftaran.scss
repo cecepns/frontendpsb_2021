@@ -1,0 +1,129 @@
+.pendaftaran {
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url('../img/bg-circle1.png');
+    background-size: contain;
+    background-position: auto;
+    background-repeat: no-repeat;
+
+
+    &__title {
+        font-size: 27px;
+        color: #333d47;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 25px;
+        @media (min-width: 640px) {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        span {
+            color: #c03f94;
+            @media (min-width: 640px) {
+                // font-size: 30px;
+            }
+        }
+    }
+
+    &__wrapper-alur {
+        padding: 50px 0;
+        &__card {}
+
+        .wrapper__pagination {
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            @media(min-width:640px) {
+                justify-content: flex-start;
+
+            }
+            // width: 0%;
+            align-items: center;
+        }
+
+        .swiper-container-alur-pendaftaran {
+            .swiper-pagination-alur {
+                margin: 0px 20px;
+
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 5px;
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: #c03f94;
+                }
+            }
+
+            .swiper-button-next-alur,
+            .swiper-button-prev-alur {
+                color: #c03f94;
+                box-shadow: 4px 7px 14px rgba(0, 0, 0, 0.06);
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::after {
+                    content: none;
+                }
+            }
+
+            .swiper-button-next-alur {
+
+                &.swiper-button-disabled {
+                    background-color: rgb(242, 242, 242);
+                    box-shadow: none;
+                    filter: grayscale(1);
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                    pointer-events: inherit;
+                }
+            }
+
+            .swiper-button-prev-alur {
+                &.swiper-button-disabled {
+                    background-color: rgb(242, 242, 242);
+                    box-shadow: none;
+                    filter: grayscale(1);
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                    pointer-events: inherit;
+
+                }
+
+            }
+        }
+    }
+
+    &__wrapper-jalur {
+        padding-top: 30px;
+        &__card {
+            display: grid;
+            grid-gap: 20px 20px;
+            grid-template-columns: auto;
+            @media(min-width: 640px) {
+                grid-template-columns: auto auto;
+            }
+
+        }
+    }
+
+    &__card {
+        border-radius: 10px;
+        border: 1px solid #e8e8e8;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 26px 32px rgba(26, 36, 72, .05);
+        min-height: 350px;
+
+        &__desc {
+            line-height: 24px;
+            font-size: 19px;
+            letter-spacing: 0.4px;
+        }
+    }
+}

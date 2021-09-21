@@ -1,20 +1,34 @@
 // Config
 @import "modules/config";
 
-// Bootstrap
-@import "bootstrap";
+// // Bootstrap
+// @import "bootstrap";
+// @import "./bootstrap"; 
+
+
+// Pages
+@import "pages/landing/fasilitas";
+@import "pages/landing/aboutme";
+@import "pages/landing/selectionpath";
+@import "pages/landing/exellence";
+@import "pages/landing/partner";
+@import "pages/landing/testimoni";
+@import "pages/landing/contact";
+@import "pages/biaya/price";
+@import "pages/pendaftaran/info-pendaftaran";
+@import "pages/biaya/form-biaya";
+@import "pages/login/login";
+@import "pages/register/register";
 
 // Base
 @import "base/base.scss";
 @import "base/typhography.scss";
+@import "base/utilities.scss";
 
 //outsource
 @import "outsource/swiper";
 
-// Plugins
-@import "node_modules/slick-carousel/slick/slick.scss";
-@import "node_modules/slick-carousel/slick/slick-theme.scss";
-@import "node_modules/magnific-popup/src/css/main.scss";
+
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands";
@@ -30,8 +44,9 @@
 @import "components/skeleton";
 @import "components/preloader";
 @import "components/button";
+@import "components/form";
 @import "components/hamburger";
+@import "components/mobile-navbar";
+@import "components/floatingmessage";
 
-// Pages
-@import "pages/landing";
-@import "pages/aboutus";
+// @import "components/hamburger";

@@ -4,21 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		TRYS - Creative Digital Studio
+		PSB Ma'rifatussalaam
 	</title>
 	<link rel="stylesheet" href="css/app.css">
 	{% block styles %} {% endblock %}
 </head>
 <body>
-	{% include "partials/header.html" %}
 	
 	{% include "partials/preloader.html" %}
+    {% include "../templates/partials/header.html" %}
+    {% include "../templates/partials/mobile-navbar.html" %}
+
+
 
 	{% block content %} {% endblock %}
 
-	{% include "partials/contactus.html" %}
 
-	{% include "partials/footer.html" %}
+	{% include "../templates/partials/floating-message.html" %}
+	{% include "../templates/partials/footer.html" %}
+
+
 	<script src="js/app.js"></script>
 	{% block scripts %} {% endblock %}
 </body>

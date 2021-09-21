@@ -1,36 +1,55 @@
-// /*------------------*
-// # Base
-// *------------------*/
-
-html {
+// BASE
+$bg-body: #f9f9f9;
+$text-body: #333d47e7;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
-body,
-html {
-    overflow-x: hidden;
-    font-size: 16px;
+body {
+    font-family: "Roboto", sans-serif ;
+    background-color: $bg-body;
+    color: $text-body ;
+    margin: 0 ;
 }
 
-p {
-    font-size: 18px;
+a {
+    color: inherit ;
+    text-decoration: inherit ;
 }
 
-* {
-    &,
-    &::after,
-    &::before {
-        box-sizing: border-box;
+// p {
+//     color: $text-body;
+// }
+
+ol,
+ul {
+    list-style: none;
+}
+
+fieldset,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    padding-top: 90px;
+    // background-image: url("./assets/images/bg-section-post.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50%;
+    animation-duration: 2.8s;
+    background-color: #f9f9f9;
+    // animation-name: changewidth;
+    // animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @media (min-width: 1440px) {
+        background-size: cover;
     }
 }
 
-.heading {
-    color: #004df9;
-    font-weight: 800;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-size: 10px;
-    @media(min-width:640px) {
-        font-size: 18px;
-    }
-}

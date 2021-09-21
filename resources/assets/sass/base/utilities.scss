@@ -1,0 +1,41 @@
+.app-container {
+    max-width: calc(1140px + 4rem);
+    margin: 0 auto;
+    padding: 1rem;
+    @media (min-width: 1024px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (max-width: 640px) {
+        padding: 0 1.5rem;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    
+}
+
+.w-5 {
+    width: 50%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media(min-width:640px) {
+    .md-w-5 {
+      width: 50%;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

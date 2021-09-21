@@ -1,79 +1,53 @@
 @font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Regular.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: 'Roboto';
+  src: 
+  url('../../fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+  // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
+      // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
+      // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
+      ;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Black.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: 'Roboto';
+  src: 
+  url('../../fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+  // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
+      // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
+      // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
+      ;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Bold.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
 
 @font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Medium.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: 'Roboto';
+  src: 
+  url('../../fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+  // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
+      // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
+      // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
+      ;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Light.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-
-@font-face {
-    font-family: 'Yantramanap';
-    src: 
-    url('../../fonts/Yantramanav/Yantramanav-Thin.ttf') format('truetype'),
-    // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
-        // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
-        // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
-        ;
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-  
+  font-family: 'Roboto';
+  src: 
+  url('../../fonts/Roboto/Roboto-Black.ttf') format('truetype'),
+  // url('../../fonts/AIAEverest-Regular.woff2') format('woff2'),
+      // url('../../fonts/AIAEverest-Regular.woff') format('woff'),
+      // url('../../fonts/AIAEverest-Regular.svg#AIAEverest-Regular') format('svg')
+      ;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
